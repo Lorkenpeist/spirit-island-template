@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../_global/css/global.css" rel="stylesheet" />
+  <link href="../../_global/css/card.css" rel="stylesheet" />
+</head>
+<body>
+  <card class="slow">
+    <img class="image" src="Life-green.png" />
+    <cost>1</cost>
+    <name>GROWTH IN ABUNDANCE</name>
+
+    <element class="sun"></element>
+    <element class="water"></element>
+	<element class="earth"></element>
+	<element class="plant"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>1</range>
+      </info-range>
+      <info-target><icon class="jungle-wetland"></icon></info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          If <icon class="wild"></icon> is present, remove 1 <icon class="blight"></icon>.
+		</div>
+		<div class="or"></div>
+		<div>
+          Add 1 <icon class="wild"></icon>.
+        </div>
+      </rules>
+    </rules-container>
+
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+
+  <card class="fast">
+    <img class="image" src="Life-green.png" />
+    <cost>0</cost>
+    <name>AID FROM THE WILD</name>
+
+    <element class="plant"></element>
+	<element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>2</range>
+      </info-range>
+      <info-target>ANY</info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          Defend 1.
+        </div>
+		<threshold>
+        <threshold-line></threshold-line>
+        <threshold-title>IF YOU HAVE</threshold-title>
+        <threshold-condition>
+          3<icon class="plant"></icon>:
+        </threshold-condition>
+        <div style="line-height: 25px">
+          Instead, Defend 3 per <icon class="wild"></icon>.
+        </div>
+		<threshold-condition>
+          3<icon class="animal"></icon>:
+        </threshold-condition>
+		<div style="line-height: 25px">
+          Up to 2 <icon class="beast"></icon> count as <icon class="dahan"></icon> during Ravage this turn.
+        </div>
+      </threshold>
+      </rules>
+    </rules-container>
+
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+  <card class="fast">
+    <img class="image" src="Life-green.png" />
+    <cost>1</cost>
+    <name>FEED THE MULTITUDES</name>
+
+    <element class="water"></element>
+	<element class="plant"></element>
+    <element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>2</range>
+      </info-range>
+      <info-target>
+        <icon class="wild"></icon>
+      </info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          Gather up to 1 <icon class="dahan"></icon> and 1 <icon class="beast"></icon>.  If there are now at least 2 <icon class="dahan"></icon>, add 1 <icon class="dahan"></icon>.<br />
+		  <br />
+		  If Invaders are present, they Build in target land and skip the next Ravage there this turn.
+        </div>
+      </rules>
+    </rules-container>
+    
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+  <card></card>
+</body>
+</html>

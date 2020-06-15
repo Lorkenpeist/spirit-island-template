@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../_global/css/global.css" rel="stylesheet" />
+  <link href="../../_global/css/card.css" rel="stylesheet" />
+</head>
+<body>
+  <card class="fast">
+    <img class="image" src="Death-red.png" />
+    <cost>2</cost>
+    <name>PUTRID CYSTFLIES</name>
+
+    <element class="air"></element>
+    <element class="fire"></element>
+	<element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>1</range>
+      </info-range>
+      <info-target>ANY</info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          Add 1 <icon class="disease"></icon>. <br />
+		  <br />
+          If <icon class="beast"></icon> are present, remove 1 <icon class="beast"></icon>.  <span style="white-space: nowrap">1 <icon class="fear"></icon></span>.  Push 1 <icon class="explorer"></icon>/<icon class="town"></icon>.
+        </div>
+      </rules>
+    </rules-container>
+
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+
+  <card class="slow">
+    <img class="image" src="Death-red.png" />
+    <cost>0</cost>
+    <name>BLOODTHIRSTY SCAVENGERS</name>
+
+    <element class="fire"></element>
+	<element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>2</range>
+      </info-range>
+      <info-target>INVADERS</info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          1 Damage to a damaged Invader.
+        </div>
+        <div class="or"></div>
+        <div>
+          1 <icon class="fear"></icon>.
+        </div>
+      </rules>
+    </rules-container>
+
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+  <card class="slow">
+    <img class="image" src="Death-red.png" />
+    <cost>0</cost>
+    <name>LIFE DRAIN</name>
+
+    <element class="air"></element>
+    <element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>1</range>
+      </info-range>
+      <info-target>
+        ANY
+      </info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          Gain 1 Energy for every 2 Health of Invaders this Power destroys.
+        </div>
+        <div>
+          1 Damage.
+        </div>
+      </rules>
+      <threshold>
+        <threshold-line></threshold-line>
+        <threshold-title>IF YOU HAVE</threshold-title>
+        <threshold-condition>
+          3<icon class="air"></icon> 3<icon class="animal"></icon>:
+        </threshold-condition>
+        <div>
+          +3 Damage.
+        </div>
+      </threshold>
+    </rules-container>
+    
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+  <card></card>
+</body>
+</html>
