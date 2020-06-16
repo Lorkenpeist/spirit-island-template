@@ -26,13 +26,13 @@
       <info-range>
         <range>1</range>
       </info-range>
-      <info-target><icon class="jungle-wetland"></icon></info-target>
+      <info-target>ANY</info-target>
     </info>
 
     <rules-container>
       <rules>
         <div>
-          If <icon class="wild"></icon> is present, remove 1 <icon class="blight"></icon>.
+          If target land is <icon class="jungle-wetland"></icon> and <icon class="wild"></icon> are present, remove 1 <icon class="blight"></icon>.
 		</div>
 		<div class="or"></div>
 		<div>
@@ -45,12 +45,12 @@
   </card>
 
 
-  <card class="fast">
+  <card class="slow">
     <img class="image" src="Life-green.png" />
     <cost>0</cost>
-    <name>AID FROM THE WILD</name>
+    <name>DRIVE THEM OFF THE WILD LAND</name>
 
-    <element class="plant"></element>
+    <element class="sun"></element>
 	<element class="animal"></element>
 
     <info-title>
@@ -62,30 +62,25 @@
     <info>
       <info-speed></info-speed>
       <info-range>
-        <range>2</range>
+        <range>1</range>
       </info-range>
-      <info-target>ANY</info-target>
+      <info-target><icon class="beast"></icon></info-target>
     </info>
 
     <rules-container>
       <rules>
         <div>
-          Defend 1.
+          1 <icon class="fear"></icon>. <br />
+		  Push 2 <icon class="explorer"></icon>/<icon class="town"></icon>/<icon class="dahan"></icon> per <icon class="beast"></icon>.
         </div>
 		<threshold>
         <threshold-line></threshold-line>
         <threshold-title>IF YOU HAVE</threshold-title>
         <threshold-condition>
-          3<icon class="plant"></icon>:
+          2<icon class="sun"></icon>4<icon class="animal"></icon>:
         </threshold-condition>
-        <div style="line-height: 25px">
-          Instead, Defend 3 per <icon class="wild"></icon>.
-        </div>
-		<threshold-condition>
-          3<icon class="animal"></icon>:
-        </threshold-condition>
-		<div style="line-height: 25px">
-          Up to 2 <icon class="beast"></icon> count as <icon class="dahan"></icon> during Ravage this turn.
+        <div>
+          Up to 1 <icon class="beast"></icon> may move with each <span style="white-space:nowrap;"><icon class="explorer"></icon>/<icon class="town"></icon></span> pushed.  1 <icon class="fear"></icon> for each <icon class="beast"></icon> you move (max 3).
         </div>
       </threshold>
       </rules>
@@ -94,12 +89,15 @@
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
 
+
   <card class="fast">
     <img class="image" src="Life-green.png" />
     <cost>1</cost>
     <name>FEED THE MULTITUDES</name>
 
-    <element class="water"></element>
+    <element class="air"></element>
+	<element class="water"></element>
+	<element class="earth"></element>
 	<element class="plant"></element>
     <element class="animal"></element>
 
@@ -122,7 +120,7 @@
     <rules-container>
       <rules>
         <div>
-          Gather up to 1 <icon class="dahan"></icon> and 1 <icon class="beast"></icon>.  If there are now at least 2 <icon class="dahan"></icon>, add 1 <icon class="dahan"></icon>.<br />
+		  Remove 1 <icon class="wild"></icon>.  Add 1 <icon class="beast"></icon>.  Gather up to 1 <icon class="dahan"></icon>.  If there are now at least 2 <icon class="dahan"></icon>, add 1 <icon class="dahan"></icon>.<br />
 		  <br />
 		  If Invaders are present, they Build in target land and skip the next Ravage there this turn.
         </div>
@@ -132,6 +130,48 @@
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
 
-  <card></card>
+
+  <card class="fast">
+    <img class="image" src="Life-green.png" />
+    <cost>0</cost>
+    <name>GIFT OF LIFE</name>
+
+	<element class="water"></element>
+	<element class="plant"></element>
+    <element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <no-range></no-range>
+      </info-range>
+      <info-target>
+        ANOTHER <icon class="spirit"></icon>
+      </info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+		  Gain 2 Energy.  Gift 1 Power from your hand to target Spirit.
+        </div>
+		<threshold>
+        <threshold-line></threshold-line>
+        <threshold-title>IF YOU HAVE</threshold-title>
+        <threshold-condition>
+          3<icon class="plant"></icon>3<icon class="animal"></icon>:
+        </threshold-condition>
+        <div>
+          They may immediately play the Power by paying its cost.
+        </div>
+      </threshold>
+      </rules>
+    </rules-container>
 </body>
 </html>

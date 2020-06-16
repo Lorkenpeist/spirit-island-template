@@ -10,6 +10,7 @@
     <cost>2</cost>
     <name>PUTRID CYSTFLIES</name>
 
+    <element class="moon"></element>
     <element class="air"></element>
     <element class="fire"></element>
 	<element class="animal"></element>
@@ -33,7 +34,8 @@
         <div>
           Add 1 <icon class="disease"></icon>. <br />
 		  <br />
-          If <icon class="beast"></icon> are present, remove 1 <icon class="beast"></icon>.  <span style="white-space: nowrap">1 <icon class="fear"></icon></span>.  Push 1 <icon class="explorer"></icon>/<icon class="town"></icon>.
+          If <icon class="beast"></icon> are present:<br />
+		  Remove 1 <icon class="beast"></icon>.  <span style="white-space: nowrap">1 <icon class="fear"></icon></span>.  Push 1 <icon class="explorer"></icon>/<icon class="town"></icon>.
         </div>
       </rules>
     </rules-container>
@@ -71,7 +73,7 @@
         </div>
         <div class="or"></div>
         <div>
-          1 <icon class="fear"></icon>.
+          If <icon class="beast"></icon> are present, 1 Damage.
         </div>
       </rules>
     </rules-container>
@@ -105,10 +107,10 @@
 
     <rules-container>
       <rules>
-        <div>
-          Gain 1 Energy for every 2 Health of Invaders this Power destroys.
+        <div style="line-height: 25px;">
+          Gain 1 Energy for every 2 Health of Invaders this Power destroys (max 3).
         </div>
-        <div>
+        <div style="line-height: 25px;">
           1 Damage.
         </div>
       </rules>
@@ -118,8 +120,8 @@
         <threshold-condition>
           3<icon class="air"></icon> 3<icon class="animal"></icon>:
         </threshold-condition>
-        <div>
-          +3 Damage.
+        <div style="line-height: 25px;">
+          Invaders and <icon class="dahan"></icon> have -1 health (min 1).
         </div>
       </threshold>
     </rules-container>
@@ -127,6 +129,51 @@
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
 
-  <card></card>
+  <card class="fast">
+    <img class="image" src="Death-red.png" />
+    <cost>2</cost>
+    <name>FRESH LUMBER ROTS AWAY</name>
+
+    <element class="moon"></element>
+    <element class="fire"></element>
+	<element class="water"></element>
+	<element class="plant"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <icon class="jungle-presence"></icon><range>1</range>
+      </info-range>
+      <info-target>
+        ANY
+      </info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div style="line-height: 25px;">
+          The next time a <icon class="town"></icon>/<icon class="city"></icon> is added to target land, 2 Damage to that <icon class="town"></icon>/<icon class="city"></icon>.
+        </div>
+      </rules>
+      <threshold>
+        <threshold-line></threshold-line>
+        <threshold-title>IF YOU HAVE</threshold-title>
+        <threshold-condition>
+          2<icon class="moon"></icon> 3<icon class="water"></icon>3<icon class="plant"></icon>:
+        </threshold-condition>
+        <div style="line-height: 25px;">
+          Add 1 <icon class="blight"></icon> to the originating Jungle. After each effect that adds <icon class="town"></icon>/<icon class="city"></icon> in or adjacent to the origin: 2 Damage to each <icon class="town"></icon>/<icon class="city"></icon> added.
+        </div>
+      </threshold>
+    </rules-container>
+    
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
 </body>
 </html>
