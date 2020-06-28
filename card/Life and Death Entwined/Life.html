@@ -4,7 +4,7 @@
   <link href="../../_global/css/global.css" rel="stylesheet" />
   <link href="../../_global/css/card.css" rel="stylesheet" />
 </head>
-<body>
+<body style="width:1500px;">
   <card class="slow">
     <img class="image" src="Life-green.png" />
     <cost>1</cost>
@@ -159,19 +159,55 @@
     <rules-container>
       <rules>
         <div>
-		  Gain 2 Energy.  Gift 1 Power from your hand to target Spirit.
+		  Gift 1 Power from your hand to target Spirit.  They may immediately play it by paying its cost.
         </div>
       </rules>
-	  <threshold>
-        <threshold-line></threshold-line>
-        <threshold-title>IF YOU HAVE</threshold-title>
-        <threshold-condition>
-          3<icon class="plant"></icon>3<icon class="animal"></icon>:
-        </threshold-condition>
-        <div>
-          They may immediately play the Power by paying its cost.
-        </div>
-      </threshold>
     </rules-container>
+    
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+
+  <card class="fast">
+    <img class="image" src="Life-green.png" />
+    <cost>0</cost>
+    <name>TOUCH OF BREEZE</name>
+
+	<element class="air"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>0</range>
+      </info-range>
+      <info-target>
+        ANY
+      </info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+		  Push 1 of your <icon class="presence"></icon>.<br />
+		  <br />
+		  You may immediately play another Power Card by paying its cost.
+        </div>
+      </rules>
+    </rules-container>
+    
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+  
+  
+  <card></card>
+
+
+
 </body>
 </html>

@@ -4,7 +4,7 @@
   <link href="../../_global/css/global.css" rel="stylesheet" />
   <link href="../../_global/css/card.css" rel="stylesheet" />
 </head>
-<body>
+<body style="width:1500px;">
   <card class="fast">
     <img class="image" src="Death-red.png" />
     <cost>2</cost>
@@ -148,17 +148,17 @@
     <info>
       <info-speed></info-speed>
       <info-range>
-        <icon class="jungle-presence"></icon><range>1</range>
+        <icon class="sacred-site"></icon><range>1</range>
       </info-range>
       <info-target>
-        ANY
+        <icon class="jungle"></icon>
       </info-target>
     </info>
 
     <rules-container>
       <rules>
-        <div style="line-height: 25px;">
-          The next time a <icon class="town"></icon>/<icon class="city"></icon> is added to target land, 2 Damage to that <icon class="town"></icon>/<icon class="city"></icon>.
+        <div style="line-height: 23px;">
+          After the next time a <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span> is added in or adjacent to target land, 2 Damage to that <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span>.
         </div>
       </rules>
       <threshold>
@@ -167,13 +167,57 @@
         <threshold-condition>
           2<icon class="moon"></icon> 3<icon class="water"></icon>3<icon class="plant"></icon>:
         </threshold-condition>
-        <div style="line-height: 25px;">
-          Add 1 <icon class="blight"></icon> to the originating Jungle. After each effect that adds <icon class="town"></icon>/<icon class="city"></icon> in or adjacent to the origin: 2 Damage to each <icon class="town"></icon>/<icon class="city"></icon> added.
+        <div style="line-height: 23px;">
+          Instead, add 1 <icon class="blight"></icon>.  After each effect that adds <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span> in or adjacent to target land: 2 Damage to each <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span> added.
         </div>
       </threshold>
     </rules-container>
     
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
+  
+  
+  
+  <card class="fast">
+    <img class="image" src="Death-red.png" />
+    <cost>0</cost>
+    <name>TOUCH OF FOREBODING</name>
+
+	<element class="air"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>1</range>
+      </info-range>
+      <info-target>
+        ANY
+      </info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+		  1 <icon class="fear"></icon>.<br />
+		  <br />
+		  You may immediately play another Power Card by paying its cost.
+        </div>
+      </rules>
+    </rules-container>
+    
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+  
+  
+  <card></card>
+
+  
+  
 </body>
 </html>
