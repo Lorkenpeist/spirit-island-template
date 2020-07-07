@@ -4,10 +4,10 @@
   <link href="../../_global/css/global.css" rel="stylesheet" />
   <link href="../../_global/css/card.css" rel="stylesheet" />
 </head>
-<body style="width:1500px;">
+<body>
   <card class="slow">
     <img class="image" src="Life-green.png" />
-    <cost>1</cost>
+    <cost>0</cost>
     <name>GROWTH IN ABUNDANCE</name>
 
     <element class="sun"></element>
@@ -32,7 +32,7 @@
     <rules-container>
       <rules>
         <div>
-          If target land is <icon class="jungle-wetland"></icon> and <icon class="wild"></icon> are present, remove 1 <icon class="blight"></icon>.
+          If target land is <icon class="jungle-wetland"></icon> and <icon class="wild"></icon> are present, remove 1 <icon class="blight"></icon> and 1 <icon class="wild"></icon>.
 		</div>
 		<div class="or"></div>
 		<div>
@@ -44,50 +44,6 @@
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
 
-
-  <card class="slow">
-    <img class="image" src="Life-green.png" />
-    <cost>0</cost>
-    <name>DRIVE THEM OFF THE WILD LAND</name>
-
-    <element class="sun"></element>
-	<element class="animal"></element>
-
-    <info-title>
-      <info-title-speed>SPEED</info-title-speed>
-      <info-title-range>RANGE</info-title-range>
-      <info-title-target>TARGET LAND</info-title-target>
-    </info-title>
-
-    <info>
-      <info-speed></info-speed>
-      <info-range>
-        <range>1</range>
-      </info-range>
-      <info-target><icon class="beast"></icon></info-target>
-    </info>
-
-    <rules-container>
-      <rules>
-        <div>
-          1 <icon class="fear"></icon>. <br />
-		  Push 2 <icon class="explorer"></icon>/<icon class="town"></icon>/<icon class="dahan"></icon> per <icon class="beast"></icon>.
-        </div>
-      </rules>
-	  <threshold>
-        <threshold-line></threshold-line>
-        <threshold-title>IF YOU HAVE</threshold-title>
-        <threshold-condition>
-          2<icon class="sun"></icon>4<icon class="animal"></icon>:
-        </threshold-condition>
-        <div>
-          Up to 1 <icon class="beast"></icon> may move with each <span style="white-space:nowrap;"><icon class="explorer"></icon>/<icon class="town"></icon></span> pushed.  1 <icon class="fear"></icon> for each <icon class="beast"></icon> you move (max 3).
-        </div>
-      </threshold>
-    </rules-container>
-
-    <artist-name>WATCHER ACTS NOT</artist-name>
-  </card>
 
 
   <card class="fast">
@@ -110,7 +66,7 @@
     <info>
       <info-speed></info-speed>
       <info-range>
-        <range>2</range>
+        <range>1</range>
       </info-range>
       <info-target>
         <icon class="wild"></icon>
@@ -171,41 +127,46 @@
   <card class="fast">
     <img class="image" src="Life-green.png" />
     <cost>0</cost>
-    <name>TOUCH OF BREEZE</name>
+    <name>SEEK NEW FORAGE</name>
 
-	<element class="air"></element>
+    <element class="sun"></element>
+	<element class="plant"></element>
+	<element class="animal"></element>
 
     <info-title>
       <info-title-speed>SPEED</info-title-speed>
       <info-title-range>RANGE</info-title-range>
-      <info-title-target>TARGET</info-title-target>
+      <info-title-target>TARGET LAND</info-title-target>
     </info-title>
 
     <info>
       <info-speed></info-speed>
       <info-range>
-        <range>0</range>
+        <range>1</range>
       </info-range>
-      <info-target>
-        ANY
-      </info-target>
+      <info-target><icon class="beast"></icon></info-target>
     </info>
 
     <rules-container>
       <rules>
         <div>
-		  Push 1 of your <icon class="presence"></icon>.<br />
-		  <br />
-		  You may immediately play another Power Card by paying its cost.
+          Push up to 3 <icon class="beast"></icon> to lands with <span style="white-space: nowrap"><icon class="wild"></icon>.</span>
         </div>
       </rules>
+	  <threshold>
+        <threshold-line></threshold-line>
+        <threshold-title>IF YOU HAVE</threshold-title>
+        <threshold-condition>
+          3<icon class="plant"></icon>3<icon class="animal"></icon>:
+        </threshold-condition>
+        <div>
+          Add 1 <icon class="beast"></icon> in one of the lands pushed to.
+        </div>
+      </threshold>
     </rules-container>
-    
+
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
-  
-  
-  <card></card>
 
 
 
