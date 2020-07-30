@@ -23,9 +23,9 @@
     <info>
       <info-speed></info-speed>
       <info-range>
-        <range>2</range>
+        <icon class="sacred-site"></icon><range>2</range>
       </info-range>
-      <info-target>INVADERS</info-target>
+      <info-target>ANY</info-target>
     </info>
 
     <rules-container>
@@ -41,11 +41,48 @@
     <artist-name>WATCHER ACTS NOT</artist-name>
   </card>
 
+
+  <card class="fast">
+    <img class="image" src="Death-red.png" />
+    <cost>3</cost>
+    <name>HARBINGERS OF DEATH</name>
+
+    <element class="moon"></element>
+	<element class="fire"></element>
+	<element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <range>1</range>
+      </info-range>
+      <info-target><icon class="beast"></icon></info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          Add 1 <icon class="disease"></icon>. Push up to 2 <icon class="beast"></icon>, moving 1 <icon class="disease"></icon> with each <icon class="beast"></icon> pushed.  2 <icon class="fear"></icon> if any <icon class="disease"></icon> were moved to lands with Invaders. 
+        </div>
+      </rules>
+    </rules-container>
+
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+
+
   <card class="slow">
     <img class="image" src="Death-red.png" />
-    <cost>0</cost>
+    <cost>1</cost>
     <name>LIFE DRAIN</name>
 
+    <element class="moon"></element>
     <element class="air"></element>
     <element class="animal"></element>
 
@@ -68,7 +105,7 @@
     <rules-container>
       <rules>
         <div style="line-height: 25px;">
-          Gain 1 Energy for every 2 Health of Invaders this Power destroys (max 3).
+          Gain 1 Energy for every Invader this Power destroys (max 4).
         </div>
         <div style="line-height: 25px;">
           1 Damage.
@@ -78,57 +115,10 @@
         <threshold-line></threshold-line>
         <threshold-title>IF YOU HAVE</threshold-title>
         <threshold-condition>
-          3<icon class="air"></icon> 3<icon class="animal"></icon>:
+          3<icon class="moon"></icon> 3<icon class="animal"></icon>:
         </threshold-condition>
         <div style="line-height: 25px;">
           Invaders and <icon class="dahan"></icon> have -1 health (min 1).
-        </div>
-      </threshold>
-    </rules-container>
-    
-    <artist-name>WATCHER ACTS NOT</artist-name>
-  </card>
-
-  <card class="fast">
-    <img class="image" src="Death-red.png" />
-    <cost>2</cost>
-    <name>FRESH LUMBER ROTS AWAY</name>
-
-    <element class="moon"></element>
-    <element class="fire"></element>
-	<element class="water"></element>
-	<element class="plant"></element>
-
-    <info-title>
-      <info-title-speed>SPEED</info-title-speed>
-      <info-title-range>RANGE</info-title-range>
-      <info-title-target>TARGET LAND</info-title-target>
-    </info-title>
-
-    <info>
-      <info-speed></info-speed>
-      <info-range>
-        <icon class="sacred-site"></icon><range>1</range>
-      </info-range>
-      <info-target>
-        <icon class="jungle"></icon>
-      </info-target>
-    </info>
-
-    <rules-container>
-      <rules>
-        <div style="line-height: 23px;">
-          The next time a <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span> is added in or adjacent to target land, <span style="white-space: nowrap">2 Damage</span> to that <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span>.
-        </div>
-      </rules>
-      <threshold>
-        <threshold-line></threshold-line>
-        <threshold-title>IF YOU HAVE</threshold-title>
-        <threshold-condition>
-          3<icon class="moon"></icon> 3<icon class="water"></icon>4<icon class="plant"></icon>:
-        </threshold-condition>
-        <div style="line-height: 23px;">
-          Instead, add 1 <icon class="blight"></icon>.  When a <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon></span> is added in or adjacent to target land, 2 Damage to that <span style="white-space: nowrap"><icon class="town"></icon>/<icon class="city"></icon>.</span>
         </div>
       </threshold>
     </rules-container>
@@ -144,7 +134,6 @@
 
 	<element class="moon"></element>
 	<element class="fire"></element>
-	<element class="air"></element>
 	<element class="plant"></element>
     <element class="animal"></element>
 

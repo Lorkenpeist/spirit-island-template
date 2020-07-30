@@ -7,10 +7,9 @@
 <body>
   <card class="slow">
     <img class="image" src="Life-green.png" />
-    <cost>0</cost>
+    <cost>1</cost>
     <name>GROWTH IN ABUNDANCE</name>
 
-    <element class="sun"></element>
     <element class="water"></element>
 	<element class="earth"></element>
 	<element class="plant"></element>
@@ -32,7 +31,7 @@
     <rules-container>
       <rules>
         <div>
-          If target land is <icon class="jungle-wetland"></icon> and <icon class="wild"></icon> are present, remove 1 <icon class="blight"></icon> and 1 <icon class="wild"></icon>.
+          If <icon class="wild"></icon> are present, remove 1 <icon class="wild"></icon> and 1 <icon class="blight"></icon>.
 		</div>
 		<div class="or"></div>
 		<div>
@@ -45,54 +44,11 @@
   </card>
 
 
-
-  <card class="fast">
-    <img class="image" src="Life-green.png" />
-    <cost>1</cost>
-    <name>FEED THE MULTITUDES</name>
-
-    <element class="air"></element>
-	<element class="water"></element>
-	<element class="earth"></element>
-	<element class="plant"></element>
-    <element class="animal"></element>
-
-    <info-title>
-      <info-title-speed>SPEED</info-title-speed>
-      <info-title-range>RANGE</info-title-range>
-      <info-title-target>TARGET LAND</info-title-target>
-    </info-title>
-
-    <info>
-      <info-speed></info-speed>
-      <info-range>
-        <range>1</range>
-      </info-range>
-      <info-target>
-        <icon class="wild"></icon>
-      </info-target>
-    </info>
-
-    <rules-container>
-      <rules>
-        <div>
-		  Remove 1 <icon class="wild"></icon>.  Add 1 <icon class="beast"></icon>.  Gather up to 1 <icon class="dahan"></icon>.  If there are now at least 2 <icon class="dahan"></icon>, add 1 <icon class="dahan"></icon>.<br />
-		  <br />
-		  If Invaders are present, they Build in target land and skip the next Ravage there this turn.
-        </div>
-      </rules>
-    </rules-container>
-    
-    <artist-name>WATCHER ACTS NOT</artist-name>
-  </card>
-
-
   <card class="fast">
     <img class="image" src="Life-green.png" />
     <cost>0</cost>
     <name>GIFT OF LIFE</name>
 
-	<element class="water"></element>
 	<element class="water"></element>
 	<element class="plant"></element>
     <element class="animal"></element>
@@ -129,10 +85,61 @@
 
   <card class="fast">
     <img class="image" src="Life-green.png" />
-    <cost>0</cost>
-    <name>SEEK NEW FORAGE</name>
+    <cost>1</cost>
+    <name>DEFENSE OF THE WILD</name>
 
-    <element class="sun"></element>
+    <element class="earth"></element>
+	<element class="plant"></element>
+	<element class="animal"></element>
+
+    <info-title>
+      <info-title-speed>SPEED</info-title-speed>
+      <info-title-range>RANGE</info-title-range>
+      <info-title-target>TARGET LAND</info-title-target>
+    </info-title>
+
+    <info>
+      <info-speed></info-speed>
+      <info-range>
+        <icon class="sacred-site"></icon><range>1</range>
+      </info-range>
+      <info-target>ANY</info-target>
+    </info>
+
+    <rules-container>
+      <rules>
+        <div>
+          Defend 2. 
+        </div>
+      </rules>
+	  <threshold>
+        <threshold-line></threshold-line>
+        <threshold-title>IF YOU HAVE</threshold-title>
+        <threshold-condition>
+          3<icon class="plant"></icon>:
+        </threshold-condition>
+        <div>
+          Defend 2 per <icon class="wild"></icon>.  Remove 1 <icon class="wild"></icon>.
+        </div>
+		<threshold-condition>
+          3<icon class="animal"></icon>:
+        </threshold-condition>
+        <div>
+          After Invaders Ravage in target land, 1 Damage per <icon class="beast"></icon> (max 3).
+        </div>
+      </threshold>
+    </rules-container>
+
+    <artist-name>WATCHER ACTS NOT</artist-name>
+  </card>
+  
+  
+  <card class="fast">
+    <img class="image" src="Life-green.png" />
+    <cost>0</cost>
+    <name>CALL TO HARVEST</name>
+
+    <element class="water"></element>
 	<element class="plant"></element>
 	<element class="animal"></element>
 
@@ -147,25 +154,15 @@
       <info-range>
         <range>1</range>
       </info-range>
-      <info-target><icon class="beast"></icon></info-target>
+      <info-target><icon class="wild"></icon></info-target>
     </info>
 
     <rules-container>
       <rules>
         <div>
-          Push up to 3 <icon class="beast"></icon> to lands with <span style="white-space: nowrap"><icon class="wild"></icon>.</span>
-        </div>
+          Gather up to 2 <icon class="dahan"></icon>.  If <icon class="dahan"></icon> are present, you may remove 1 <icon class="wild"></icon> to add 1 <icon class="dahan"></icon> and gain 1 Energy. 
+		</div>
       </rules>
-	  <threshold>
-        <threshold-line></threshold-line>
-        <threshold-title>IF YOU HAVE</threshold-title>
-        <threshold-condition>
-          3<icon class="plant"></icon>4<icon class="animal"></icon>:
-        </threshold-condition>
-        <div>
-          Add 1 <icon class="beast"></icon> in one of the lands pushed to.
-        </div>
-      </threshold>
     </rules-container>
 
     <artist-name>WATCHER ACTS NOT</artist-name>
